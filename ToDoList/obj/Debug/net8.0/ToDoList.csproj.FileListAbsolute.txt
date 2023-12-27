@@ -409,3 +409,4 @@ D:\ASP\Rider\ToDoList\ToDoList\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.C
 D:\ASP\Rider\ToDoList\ToDoList\obj\Debug\net8.0\ToDoList.MvcApplicationPartsAssemblyInfo.cs
 D:\ASP\Rider\ToDoList\ToDoList\bin\Debug\net8.0\ToDoListService.dll
 D:\ASP\Rider\ToDoList\ToDoList\bin\Debug\net8.0\ToDoListService.pdb
+D:\ASP\Rider\ToDoList\ToDoList\obj\Debug\net8.0\ToDoList.sourcelink.json

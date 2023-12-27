@@ -311,3 +311,4 @@ D:\ASP\Rider\ToDoList\ToDoListService\obj\Debug\net7.0\ToDoListService.dll
 D:\ASP\Rider\ToDoList\ToDoListService\obj\Debug\net7.0\refint\ToDoListService.dll
 D:\ASP\Rider\ToDoList\ToDoListService\obj\Debug\net7.0\ToDoListService.pdb
 D:\ASP\Rider\ToDoList\ToDoListService\obj\Debug\net7.0\ref\ToDoListService.dll
+D:\ASP\Rider\ToDoList\ToDoListService\obj\Debug\net7.0\ToDoListService.sourcelink.json

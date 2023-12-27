@@ -9,3 +9,4 @@ D:\ASP\Rider\ToDoList\ToDoList.Domain\obj\Debug\net7.0\ToDoList.Domain.dll
 D:\ASP\Rider\ToDoList\ToDoList.Domain\obj\Debug\net7.0\refint\ToDoList.Domain.dll
 D:\ASP\Rider\ToDoList\ToDoList.Domain\obj\Debug\net7.0\ToDoList.Domain.pdb
 D:\ASP\Rider\ToDoList\ToDoList.Domain\obj\Debug\net7.0\ref\ToDoList.Domain.dll
+D:\ASP\Rider\ToDoList\ToDoList.Domain\obj\Debug\net7.0\ToDoList.Domain.sourcelink.json
