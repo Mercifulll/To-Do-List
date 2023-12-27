@@ -71,13 +71,48 @@ public class TaskService : ITaskService
         }
     }
 
+    public async Task<IBaseResponse<bool>> EndTask(long id)
+    {
+        try
+        {
+            var task = await _taskRepository.GetAll().FirstOrDefaultAsync(x => x.Id == id);
+            if (task == null)
+            {
+                return new BaseResponse<bool>()
+                {
+                    Description = "Task not found",
+                    StatusCode = StatusCode.TaskNotFound
+                };
+            }
+
+            task.IsDone = true;
+            
+            await _taskRepository.Update(task);
+            
+            return new BaseResponse<bool>()
+            {
+                Description = "Successfully completed!",
+                StatusCode = StatusCode.OK
+            };
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, $"[TaskService.EndTask]: {ex.Message}");
+            return new BaseResponse<bool>()
+            {
+                Description = $"{ex.Message}",
+                StatusCode = StatusCode.InternalServerError
+            };
+        }
+    }
+
     public async Task<IBaseResponse<IEnumerable<TaskViewModel>>> GetTasks(TaskFilter filter)
     {
         try
         {
             var tasks = await _taskRepository.GetAll()
-                .WhereIf(!string.IsNullOrWhiteSpace(filter.Name),x=>x.Name == filter.Name)
-                .WhereIf(filter.Priority.HasValue, x=>x.Priority == filter.Priority)
+                .WhereIf(!string.IsNullOrWhiteSpace(filter.Name), x => x.Name == filter.Name)
+                .WhereIf(filter.Priority.HasValue, x => x.Priority == filter.Priority)
                 .Select(x => new TaskViewModel()
                 {
                     Id = x.Id,
@@ -88,6 +123,7 @@ public class TaskService : ITaskService
                     Created = x.Created.ToLongDateString()
                 })
                 .ToListAsync();
+
             return new BaseResponse<IEnumerable<TaskViewModel>>()
             {
                 Data = tasks,
@@ -96,7 +132,7 @@ public class TaskService : ITaskService
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, $"[TaskService.Create]: {ex.Message}");
+            _logger.LogError(ex, $"[TaskService.GetTasks]: {ex.Message}");
             return new BaseResponse<IEnumerable<TaskViewModel>>()
             {
                 Description = $"{ex.Message}",
