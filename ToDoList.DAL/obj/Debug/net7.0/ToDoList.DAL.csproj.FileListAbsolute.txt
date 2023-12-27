@@ -309,3 +309,4 @@ D:\ASP\Rider\ToDoList\ToDoList.DAL\bin\Debug\net7.0\refs\System.Xml.XmlSerialize
 D:\ASP\Rider\ToDoList\ToDoList.DAL\bin\Debug\net7.0\refs\System.Xml.XPath.dll
 D:\ASP\Rider\ToDoList\ToDoList.DAL\bin\Debug\net7.0\refs\System.Xml.XPath.XDocument.dll
 D:\ASP\Rider\ToDoList\ToDoList.DAL\bin\Debug\net7.0\refs\WindowsBase.dll
+D:\ASP\Rider\ToDoList\ToDoList.DAL\obj\Debug\net7.0\ToDoList.DAL.sourcelink.json
