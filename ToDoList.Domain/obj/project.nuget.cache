@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tJlOd8les5KH8keIvvcLAzsKywajt3/qUohABWcK78jXVNh3Zae4jE2/UeVlp89rcxdpA8sGlWMCPNNx92VCYQ==",
+  "dgSpecHash": "8WpLezeEkOtJ0bGa9U3orQh/htAznLTCnuSitZ4f7oolb7f7Q+e+py52wJZc4/H6obcfH+Pw+RDjABONMjn5XA==",
   "success": true,
   "projectFilePath": "D:\\ASP\\Rider\\ToDoList\\ToDoList.Domain\\ToDoList.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\G3 15\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"

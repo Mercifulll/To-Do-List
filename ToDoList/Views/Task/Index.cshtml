@@ -91,7 +91,7 @@
                         icon: "warning",
                         showCancelButton: true,
                         confirmButtonText: "Yes",
-                        canselButtonText: "Cancel",
+                        cancelButtonText: "Cancel",
                         reverseButtons: true
                     }).then((result) => {
                         if (result.isConfirmed) {
@@ -140,7 +140,7 @@
             dataTable.draw();
         })
 
-        $('input[name = "prioritySearch"]').on('change', function () {
+        $('#prioritySearch').on('change', function () {
             dataTable.draw();
         })
 

@@ -410,3 +410,4 @@ D:\ASP\Rider\ToDoList\ToDoList\obj\Debug\net8.0\ToDoList.MvcApplicationPartsAsse
 D:\ASP\Rider\ToDoList\ToDoList\bin\Debug\net8.0\ToDoListService.dll
 D:\ASP\Rider\ToDoList\ToDoList\bin\Debug\net8.0\ToDoListService.pdb
 D:\ASP\Rider\ToDoList\ToDoList\obj\Debug\net8.0\ToDoList.sourcelink.json
+D:\ASP\Rider\ToDoList\ToDoList\bin\Debug\net8.0\CsvHelper.dll

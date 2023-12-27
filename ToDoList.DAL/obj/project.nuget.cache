@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7WKXPOyYubpVUUtqF1bjbTHKTHNoNgnONACXN37RMSKMAw6UUI1j3mdvx5GJyxYCjNaDlhhVJAdCmXMFwyYRWw==",
+  "dgSpecHash": "HxVczGZs3aDvc+wVWGEyufniuu1DRbULzz46dzRPD3nED85oyKxFzrMdRCzvuuDsMgRU/8CbJejgxbvtiH1QdA==",
   "success": true,
   "projectFilePath": "D:\\ASP\\Rider\\ToDoList\\ToDoList.DAL\\ToDoList.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\G3 15\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\G3 15\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.0\\microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\7.0.3\\microsoft.aspnetcore.mvc.razor.runtimecompilation.7.0.3.nupkg.sha512",
     "C:\\Users\\G3 15\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
