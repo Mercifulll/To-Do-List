@@ -65,5 +65,5 @@ public class TaskController : Controller
     {
         var response = await _taskService.GetTasks(filter);
         return Json(new { data = response.Data });
-    }
+    } 
 }
