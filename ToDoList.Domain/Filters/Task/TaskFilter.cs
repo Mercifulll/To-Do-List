@@ -2,7 +2,7 @@
 
 namespace ToDoList.Domain.Filters.Task;
 
-public class TaskFilter : PagingFilter
+public class TaskFilter
 {
     public string Name { get; set; }
     

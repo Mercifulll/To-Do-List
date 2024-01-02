@@ -170,12 +170,11 @@ public class TaskService : ITaskService
         }
     }
 
-    public async Task<DataTableResult> GetTasks(TaskFilter filter)
+    public async Task<IBaseResponse<IEnumerable<TaskViewModel>>> GetTasks(TaskFilter filter)
     {
         try
         {
             var tasks = await _taskRepository.GetAll()
-                .Where(x=>!x.IsDone)
                 .WhereIf(!string.IsNullOrWhiteSpace(filter.Name), x => x.Name == filter.Name)
                 .WhereIf(filter.Priority.HasValue, x => x.Priority == filter.Priority)
                 .Select(x => new TaskViewModel()
@@ -187,24 +186,21 @@ public class TaskService : ITaskService
                     Priority = x.Priority.GetDisplayName(),
                     Created = x.Created.ToLongDateString()
                 })
-                .Skip(filter.Skip)
-                .Take(filter.PageSize)
                 .ToListAsync();
-            var count = _taskRepository.GetAll().Count(x=>!x.IsDone);
 
-            return new DataTableResult()
+            return new BaseResponse<IEnumerable<TaskViewModel>>()
             {
                 Data = tasks,
-                Total = count
+                StatusCode = StatusCode.OK
             };
         }
         catch (Exception ex)
         {
             _logger.LogError(ex, $"[TaskService.GetTasks]: {ex.Message}");
-            return new DataTableResult()
+            return new BaseResponse<IEnumerable<TaskViewModel>>()
             {
-                Data = null,
-                Total = 0
+                Description = $"{ex.Message}",
+                StatusCode = StatusCode.InternalServerError
             };
         }
     }
